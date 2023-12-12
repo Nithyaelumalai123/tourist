@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+label{
+    display: none;
+}
+.navbar img{
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 30px;
+    position: fixed;
+}
+@keyframes logo{
+    from{
+        transform:scale(0,0);
+        }
+    to{
+        transform: scale(1,1);
+
+    }
+}
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+        position: fixed;
+        right: 0;
+        z-index: 999;
+        padding:10px 20px;
+        background-color:#FFCF96;
+        width:100%;
+        height: 80px;
+        
+    }
+label{
+    display:none;
+}
+.navbar input{
+    display:none;
+}
+.rightnav{
+    display:flex;
+    gap:40px;
+}
+.rightnav button{
+    height:40px;
+    width:80px;
+    border:none;
+    border-radius:10px;
+     background-color: unset;
+    color:black;
+    font-size:20px;
+    transition: all 1s;
+}
+.rightnav button:hover{
+    border:7px double rgb(192, 141, 179);
+    transform:scale(1.1,1.1);
+    border-radius:10px;
+    background-color:#D0A2F7;
+    color:#363062;
+    font-size:18px;
+}
+
+input:checked ~.rightnav{
+    background-color: rgb(173, 228, 168);
+    left: 0;
+    transition: 1s;
+}
+
+.imgdiv video{
+    width: 98.7vw;
+    height: 100vh;
+    object-fit:cover;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 80px;
+}
+
+.color1{
+    color: blue;
+}
+.color2{
+    color: red;
+}
+.imgdiv button{
+    height: 50px;
+    width: 90px;
+    position:absolute;
+    display: flex;
+    top: 390px;
+    right: 800px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: none;
+    border: 3px solid black;
+    
+    
+}
+.imgdiv button:hover{
+    border: 5px double brown;
+    background-color:aqua;
+}
+.title{
+    color:#DA0C81;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.content{
+    width: 50%;
+    margin-left: 50px;
+}
+ .title:hover{
+    color:#5B0888
+}
+.content h2{
+    color:#0766AD;
+    font-size:40px ;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.twocontent{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+span{
+    font-size:40px;
+    color:black;
+}
+.content h4{
+    font-size:25px;
+    color: #940B92;
+    width:100%;
+}
+.box1{
+    width:550px;
+    height:80px;
+    border-left:5px solid purple;
+    background-color:lightgrey;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+
+}
+.pvt{
+    color: #DA0C81;
+    font-size: 29px;
+}
+.box{
+    margin-left: 190px;
+}
+.box h3{
+    font-size: 29px;
+}
+.box2{
+    width:550px;
+    height:80px;
+    border-left:5px solid purple;
+    background-color:lightgrey;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+}
+.box3{
+    width:550px;
+    height:80px;
+    border-left:5px solid purple;
+    background-color:lightgrey;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+
+}
+
+.content{
+    padding: 20px;
+}
+.copyright{
+    width: 100%;
+    background-color: #D0A2F7;
+    padding:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+padding-top:10px;
+}
+.contact h1{
+    width:300px;
+}
+.about{
+    width:250px;
+    
+}
+.payment h1{
+    color:#363062;
+    width:300px;
+    padding-bottom :10px; 
+    
+}
+.color1{
+    color: blue;
+}
+.color2{
+    color: red;
+}
+.payment{
+    margin-left: 30px;
+    padding: 10px;
+}
+.payment img{
+    width: 100px;
+    height:50px ;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    
+}
+.copycontent span{
+    border:1px solid black;
+    border-radius: 50%;
+    width:30px;
+    height:10px;
+}
+.copycontent{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #D0A2F7;
+    font-size: 20px;
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:500px){
+        
+   
+    .rightnav{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width:100%;
+        left: -100%;
+        position: absolute;
+        height: 500px;
+        top:70px;
+    }
+    label{
+        display: inline;
+        position: absolute;
+        padding:20px;
+        /* background-color:#FFCF96; */
+        right:0;
+        z-index: 99;
+    }
+    .navbar{
+        width:100%;
+        /* padding:0px; */
+        background-color:#FFCF96;
+        position: relative;
+        height:70px;
+    }
+    .navbar img{
+        width:50px;
+        height:50px;
+    }
+    .box2{
+        width:330px;
+        height:80px;
+    }
+   
+    .box1{
+        width:330px;
+        height:80px;
+    }
+    .box3{
+        width:330px;
+        height:80px;
+    }
+    .overall{
+        min-height: 100px;
+        overflow:auto;
+    }
+    .box{
+        margin-left:0px;
+    }
+    .box h3{
+        width: 330px;
+    }
+    .twocontent{
+        flex-direction: column;
+        margin: 0;
+    }
+    .menuicon{
+        display: inline;
+    }
+    .copyright{
+        flex-direction: column;
+        
+       }
+       .about{
+        margin-top:20px;
+        margin-bottom: 20px;
+       }
+       .payemnt{
+        margin-top:40px;
+       }
+       .imgdiv button{
+        display: none;
+           }
+
+}
+
+@media screen and (min-width:500px) and (max-width:800px){
+    .rightnav{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width:100%;
+        left: -100%;
+        position: absolute;
+        height: 500px;
+        top:70px;
+    }
+    label{
+        display: inline;
+        position: absolute;
+        padding:20px;
+        right:0;
+        z-index: 99;
+    }
+    .navbar{
+        width:100%;
+        background-color:#FFCF96;
+        position: relative;
+        height:70px;
+        position: fixed;
+    }
+    .navbar img{
+        width:50px;
+        height:50px;
+    }
+    .rightnav button{
+        height:30px;
+        width:90px;
+    }
+    .twocontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .box2{
+        width:400px;
+        height:80px;
+    }
+   
+    .box1{
+        width:400px;
+        height:80px;
+    }
+    .box3{
+        width:400px;
+        height:80px;
+    }
+    .box{
+        margin-left: 10px;
+    }
+    .copyright{
+        flex-direction: column;
+        height: 650px;
+        margin-top: 20px;
+        
+        
+       }
+       .about{
+        margin-top:20px;
+        margin-bottom: 20px;
+       }
+       .payemnt{
+        margin-top:40px;
+       }
+       .imgdiv button{
+    display: none;
+       }
+    
+
+
+}
+@media screen and (min-width:800px) and (max-width:1025px){
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .rightnav{
+        display:flex;
+        gap:10px;
+        padding-top: 15px;
+    }
+    .rightnav button{
+        height:30px;
+        width:90px;
+    }
+    .twocontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright{
+        margin-top: 20px;
+    }
+    .imgdiv button{
+        position: absolute;
+        display: flex;
+        top:390px;
+        right: 400px;
+    }
+
+
+}
+@media screen and (min-width:1025px) and (max-width:1440px){
+    .imgdiv button{
+        height: 50px;
+        width: 90px;
+        position:absolute;
+        display: flex;
+        top: 390px;
+        right: 600px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: none;
+        border: 3px solid black;
+        
+        
+    }
+    
+
+
+}
+
+

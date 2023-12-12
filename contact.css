@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+label{
+    display: none;
+}
+.navbar img{
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 30px;
+    position: fixed;
+}
+@keyframes logo{
+    from{
+        transform: scale(0,0);
+    }
+    to{
+        transform: scale(1,1);
+    }
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    padding:10px 20px;
+    background-color:#FFCF96;
+    width:100%;
+    height: 80px;
+    
+}
+
+label{
+    display:none;
+}
+.navbar input{
+    display:none;
+}
+.rightnav{
+    display:flex;
+    gap:40px;
+}
+.rightnav button{
+    height:40px;
+    width:80px;
+    border:none;
+    border-radius:10px;
+     background-color: unset;
+    color:black;
+    font-size:20px;
+    transition: all 1s;
+}
+.rightnav button:hover{
+    border:7px double rgb(192, 141, 179);
+    transform:scale(1.1,1.1);
+    border-radius:10px;
+    background-color:#D0A2F7;
+    color:#363062;
+    font-size:18px;
+}
+input:checked ~.rightnav{
+    background-color: rgb(173, 228, 168);
+    left: 0;
+    transition: 1s;
+
+}
+.container:hover{
+    border:8px double #860A35;
+}
+.overall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:620px;
+    margin-bottom: 40px;
+}
+.container{
+    background-color:#B4BDFF;
+    width:50%;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding:10px;
+}
+input{
+    width:100%;
+    position: relative;
+    padding:13px 8px;
+    margin-top:10px;
+    margin-bottom:15px;
+
+}
+.content{
+    padding: 20px;
+}
+.icon1{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+    background: none;
+  
+}
+.icon1:hover{
+    color:blue;
+    
+}
+.icon2:hover{
+    color:lightgreen;
+}
+.icon3:hover{
+    color:gold;
+
+}
+.icon4:hover{
+    color:green;
+
+}
+.icon5:hover{
+    color: red;
+
+}
+.icon2{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+  
+}
+.icon3{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+  
+}
+.icon4{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+ 
+}
+.icon5{
+    position:absolute;
+    right:0;
+    padding:10px;
+    background-color:white;
+    z-index: 8;
+    margin-top:13px;
+    margin-right:3px;
+    font-size:18px;
+ 
+}
+
+form{
+    position: relative;
+    width:100%;
+}
+textarea{
+    resize: none;
+}
+form p{
+    font-size: 20px;
+    
+}
+.linkpage i{
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+.linkpage{
+    display: flex; 
+  align-items: center;
+  justify-content:space-evenly;
+  flex-direction: row;
+  
+
+}
+.twit{
+    color:lightblue;
+}
+.face{
+    color:blue;
+}
+.insta{
+    color:pink;
+}
+.you{
+    color:red;
+}
+ .topic{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.copyright{
+    width: 100%;
+    background-color: #D0A2F7;
+    padding:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon6{
+padding-top:10px;
+font-size: 25px;
+}
+.contact h1{
+    width:300px;
+}
+.about{
+    width:250px;
+    
+}
+.payment h1{
+    color:#363062;
+    width:300px;
+    padding-bottom :10px; 
+    
+}
+.color1{
+    color: blue;
+}
+.color2{
+    color: red;
+}
+.payment{
+    margin-left: 30px;
+    padding: 10px;
+}
+.payment img{
+    width: 100px;
+    height:50px ;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    
+}
+.copycontent span{
+    border:1px solid black;
+    border-radius: 50%;
+    width:30px;
+    height:10px;
+}
+.copycontent{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #D0A2F7;
+    font-size: 20px;
+}
+.nithi{
+    width:100px;
+}
+@media screen and (min-width:320px) and (max-width:500px) {
+    .rightnav{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width:100%;
+        left: -100%;
+        position: absolute;
+        height: 500px;
+        top:70px;
+    }
+    label{
+        display: inline;
+        position: absolute;
+        padding:20px;
+        /* background-color:#FFCF96; */
+        right:0;
+        z-index: 99;
+    }
+    .navbar{
+        width:100%;
+        /* padding:0px; */
+        background-color:#FFCF96;
+        position: relative;
+        height:70px;
+    }
+    .navbar img{
+        width:50px;
+        height:50px;
+    }
+    .container{
+        width: 100%;
+    }
+   
+    .copyright{
+        flex-direction: column;
+        
+       }
+       .about{
+        margin-top:20px;
+        margin-bottom: 20px;
+       }
+       .payemnt{
+        margin-top:40px;
+       }
+  
+    
+}
+@media screen and (min-width:500px) and (max-width:800px) {
+    .copyright{
+        flex-direction: column;
+        height: 650px;
+        margin-top: 20px;
+        
+        
+       }
+       .about{
+        margin-top:20px;
+        margin-bottom: 20px;
+       }
+       .payemnt{
+        margin-top:40px;
+       }
+       .rightnav{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width:100%;
+        left: -100%;
+        position: absolute;
+        height: 500px;
+        top:70px;
+    }
+    label{
+        display: inline;
+        position: absolute;
+        padding:20px;
+        /* background-color:#FFCF96; */
+        right:0;
+        z-index: 99;
+    }
+    .navbar{
+        width:100%;
+        /* padding:0px; */
+        background-color:#FFCF96;
+        position: relative;
+        height:70px;
+    }
+    .navbar img{
+        width:50px;
+        height:50px;
+    }
+ 
+}
+
